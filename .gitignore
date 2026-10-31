@@ -11,3 +11,4 @@ dist/
 .env.*
 *.pem
 *.zip
+infra/backend.hcl
