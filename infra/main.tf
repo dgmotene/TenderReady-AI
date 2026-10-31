@@ -26,3 +26,8 @@ module "database" {
   source      = "./modules/database"
   name_prefix = local.name_prefix
 }
+
+module "auth" {
+  source      = "./modules/auth"
+  name_prefix = local.name_prefix
+}

@@ -10,3 +10,12 @@ output "docs_bucket_name" {
 output "tenders_table_name" {
   value = module.database.table_name
 }
+output "user_pool_id" {
+  value = module.auth.user_pool_id
+}
+output "user_pool_client_id" {
+  value = module.auth.user_pool_client_id
+}
+output "cognito_issuer_url" {
+  value = module.auth.issuer_url
+}
