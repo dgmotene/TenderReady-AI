@@ -7,4 +7,5 @@ terraform {
       version = "~> 5.0"
     }
   }
+  backend "s3" {} #fetch bucket name dynamically, not by hardcoding
 }
