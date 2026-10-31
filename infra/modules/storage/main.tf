@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "docs" {
-  bucket = "${var.name_prefix}-docs-${var.account_id}"
+  bucket        = "${var.name_prefix}-docs-${var.account_id}"
   force_destroy = true
 }
 
@@ -39,10 +39,10 @@ resource "aws_s3_bucket_cors_configuration" "docs" {
   bucket = aws_s3_bucket.docs.id
   cors_rule {
     allowed_headers = ["*"]
-    allowed_methods = ["PUT", "GET", "HEAD"]#will add deleting later
+    allowed_methods = ["PUT", "GET", "HEAD"] #will add deleting later
     allowed_origins = var.allowed_origins
     expose_headers  = ["ETag"]
-    
+
   }
 }
 

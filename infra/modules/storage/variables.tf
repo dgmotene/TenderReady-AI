@@ -1,20 +1,20 @@
 variable "name_prefix" {
-  type = string
+  type        = string
   description = "Prefix for resourse names, e.g tenterready-dev"
 }
 
 variable "account_id" {
-  type = string
+  type        = string
   description = "AWS acc ID, added to the backetname to make it unique"
 }
 
 variable "allowed_origins" {
-  type = list(string)
+  type        = list(string)
   description = "Website addressed allowed to upload to the bucket"
 }
 
 variable "retention_days" {
-  type = number
+  type        = number
   description = "Days before stored files are deleted"
-  default = 3
+  default     = 3
 }
